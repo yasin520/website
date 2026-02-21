@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kido Studio — Mobile App Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo"><span class="logo-dot"></span>Kido Studio</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#apps" data-en="Apps" data-tr="Uygulamalar">Apps</a></li>
+      <li><a href="#about" data-en="About" data-tr="Hakkında">About</a></li>
+      <li><a href="#contact" data-en="Contact" data-tr="İletişim">Contact</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button type="button" class="lang-btn" data-lang="tr" onclick="setLang('tr')">TR</button>
+    </div>
+    <div class="theme-toggle">
+      <button type="button" class="theme-btn active" data-theme="dark" aria-label="Dark theme" onclick="setTheme('dark')">🌙</button>
+      <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme" onclick="setTheme('light')">☀️</button>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="glow1"></div>
+  <div class="glow2"></div>
+  <div class="hero-content">
+    <h1>
+      <span data-en="Apps that" data-tr="Kullanıcıların">Apps that</span><br>
+      <span class="gradient-text" data-en="people remember." data-tr="hatırladığı uygulamalar.">people remember.</span>
+    </h1>
+    <p class="hero-desc" data-en="Kido Studio designs and develops mobile apps for iOS and Android. Clean code, polished UI, real-world performance." data-tr="Kido Studio, iOS ve Android için mobil uygulamalar tasarlar ve geliştirir. Temiz kod, şık arayüz, gerçek dünya performansı.">Kido Studio designs and develops mobile apps for iOS and Android. Clean code, polished UI, real-world performance.</p>
+    <div class="hero-actions">
+      <a href="#apps" class="btn-primary" data-en="See Our Apps →" data-tr="Uygulamalarımız →">See Our Apps →</a>
+      <a href="#contact" class="btn-secondary" data-en="Get in Touch" data-tr="İletişime Geç">Get in Touch</a>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label" data-en="Published Apps" data-tr="Yayınlanan Uygulama">Published Apps</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">iOS & Android</div>
+        <div class="stat-label" data-en="Cross Platform" data-tr="Çapraz Platform">Cross Platform</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label" data-en="Native Performance" data-tr="Native Performans">Native Performance</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<section id="apps">
+  <div class="section-label" data-en="Our Applications" data-tr="Uygulamalarımız">Our Applications</div>
+  <h2 class="section-title" data-en="Built with precision." data-tr="Hassasiyetle inşa edildi.">Built with precision.</h2>
+  <p class="section-desc" data-en="Every app we ship is production-ready, scalable, and designed to last." data-tr="Çıkardığımız her uygulama üretime hazır, ölçeklenebilir ve uzun ömürlü tasarlanır.">Every app we ship is production-ready, scalable, and designed to last.</p>
+
+  <div class="apps-grid">
+    <a class="app-card fade-in" href="blackhole.html">
+      <div class="app-header">
+        <div class="app-icon blackhole">⚫</div>
+        <div class="app-badges">
+          <span class="badge badge-live" data-en="Live" data-tr="Yayında">Live</span>
+          <span class="badge badge-platform">iOS & Android</span>
+        </div>
+      </div>
+      <div class="app-body">
+        <div class="app-name">Blackhole: Ball Balance</div>
+        <p class="app-tagline" data-en="A precision arcade game. Guide your ball using dual joysticks, dodge black holes, fight wind physics, and reach the target zone." data-tr="Bir hassasiyet oyunu. İki joystick ile topunu yönlendir, kara delikleri geç, rüzgar fiziğiyle savaş ve hedefe ulaş.">A precision arcade game. Guide your ball using dual joysticks, dodge black holes, fight wind physics, and reach the target zone.</p>
+        <div class="app-features">
+          <div class="app-feature" data-en="Dual joystick controls requiring two-handed coordination" data-tr="İki el koordinasyonu gerektiren çift joystick kontrolleri">Dual joystick controls requiring two-handed coordination</div>
+          <div class="app-feature" data-en="Wind mechanics and moving obstacles increasing with levels" data-tr="Seviye arttıkça zorlaşan rüzgar mekaniği ve hareketli engeller">Wind mechanics and moving obstacles increasing with levels</div>
+          <div class="app-feature" data-en="Unlockable ball skins and in-game coin system" data-tr="Açılabilir top skinleri ve oyun içi coin sistemi">Unlockable ball skins and in-game coin system</div>
+        </div>
+      </div>
+      <div class="app-footer">
+        <div class="store-links">
+          <span class="store-link"><i class="si si-apple"></i><span data-en="App Store" data-tr="App Store">App Store</span></span>
+          <span class="store-link"><i class="si si-googleplay"></i><span data-en="Google Play" data-tr="Google Play">Google Play</span></span>
+        </div>
+        <span class="arrow-link">↗</span>
+      </div>
+    </a>
+
+    <a class="app-card fade-in" href="hydronudge.html">
+      <div class="app-header">
+        <div class="app-icon hydro">💧</div>
+        <div class="app-badges">
+          <span class="badge badge-soon" data-en="Coming Soon" data-tr="Yakında">Coming Soon</span>
+          <span class="badge badge-platform">iOS & Android</span>
+        </div>
+      </div>
+      <div class="app-body">
+        <div class="app-name">Hydronudge</div>
+        <p class="app-tagline" data-en="Your intelligent hydration companion. AI coaching, live widgets, and social challenges that make drinking water a daily habit." data-tr="Akıllı hidrasyon asistanın. Yapay zeka koçluğu, canlı widget'lar ve su içmeyi alışkanlığa dönüştüren sosyal yarışmalar.">Your intelligent hydration companion. AI coaching, live widgets, and social challenges that make drinking water a daily habit.</p>
+        <div class="app-features">
+          <div class="app-feature" data-en="AI coaching that adapts to your daily routine" data-tr="Günlük rutininize uyum sağlayan yapay zeka koçluğu">AI coaching that adapts to your daily routine</div>
+          <div class="app-feature" data-en="Live home screen widgets for instant tracking" data-tr="Anlık takip için canlı ana ekran widget'ları">Live home screen widgets for instant tracking</div>
+          <div class="app-feature" data-en="Social competitions and friend leaderboards" data-tr="Sosyal yarışmalar ve arkadaş sıralamaları">Social competitions and friend leaderboards</div>
+        </div>
+      </div>
+      <div class="app-footer">
+        <div class="store-links">
+          <span class="store-link"><i class="si si-apple"></i><span data-en="Coming Soon" data-tr="Yakında">Coming Soon</span></span>
+          <span class="store-link"><i class="si si-googleplay"></i><span data-en="Coming Soon" data-tr="Yakında">Coming Soon</span></span>
+        </div>
+        <span class="arrow-link">↗</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="about">
+  <div class="section-label" data-en="About Kido Studio" data-tr="Kido Studio Hakkında">About Kido Studio</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <h2 class="section-title" data-en="Crafting apps that matter." data-tr="Fark yaratan uygulamalar.">Crafting apps that matter.</h2>
+      <p data-en="Kido Studio is an independent mobile development studio building high-quality apps for iOS and Android. We care about code quality, user experience, and shipping products people love using every day." data-tr="Kido Studio, iOS ve Android için yüksek kaliteli uygulamalar geliştiren bağımsız bir mobil stüdyodur. Kod kalitesine ve insanların her gün kullanmaktan keyif aldığı ürünlere önem veriyoruz.">Kido Studio is an independent mobile development studio building high-quality apps for iOS and Android. We care about code quality, user experience, and shipping products people love using every day.</p>
+      <p data-en="We cover the full stack — from backend infrastructure and API design to pixel-perfect Flutter frontends. Every app is production-ready, scalable, and built to last." data-tr="Tüm yığını kapsıyoruz — backend altyapısından Flutter arayüzlerine kadar. Her uygulama üretime hazır ve uzun ömürlü inşa edilir.">We cover the full stack — from backend infrastructure and API design to pixel-perfect Flutter frontends. Every app is production-ready, scalable, and built to last.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in"><div class="skill-icon">📱</div><div class="skill-name">Flutter</div><div class="skill-desc" data-en="Cross-platform mobile" data-tr="Çapraz platform mobil">Cross-platform mobile</div></div>
+      <div class="skill-card fade-in"><div class="skill-icon">⚙️</div><div class="skill-name">Backend</div><div class="skill-desc" data-en="APIs, auth, databases" data-tr="API, kimlik doğrulama, veritabanı">APIs, auth, databases</div></div>
+      <div class="skill-card fade-in"><div class="skill-icon">🔥</div><div class="skill-name">Firebase</div><div class="skill-desc">Firestore, FCM, Analytics</div></div>
+      <div class="skill-card fade-in"><div class="skill-icon">🎮</div><div class="skill-name" data-en="Game Dev" data-tr="Oyun Geliştirme">Game Dev</div><div class="skill-desc" data-en="2D physics, arcade" data-tr="2D fizik, arcade">2D physics, arcade</div></div>
+      <div class="skill-card fade-in"><div class="skill-icon">🎨</div><div class="skill-name">UI/UX</div><div class="skill-desc" data-en="Pixel-perfect interfaces" data-tr="Piksel mükemmel arayüzler">Pixel-perfect interfaces</div></div>
+      <div class="skill-card fade-in"><div class="skill-icon">🚀</div><div class="skill-name" data-en="Publishing" data-tr="Yayınlama">Publishing</div><div class="skill-desc" data-en="iOS & Android stores" data-tr="iOS ve Android mağazaları">iOS & Android stores</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="contact">
+  <div class="contact-box fade-in">
+    <div class="section-label" data-en="Get in Touch" data-tr="İletişime Geç">Get in Touch</div>
+    <h2 data-en="Let's build something great." data-tr="Birlikte harika şeyler üretelim.">Let's build something great.</h2>
+    <p data-en="Have an app idea? Want to collaborate? Drop us a message." data-tr="Bir uygulama fikrin mi var? İş birliği yapmak ister misin? Bize ulaş.">Have an app idea? Want to collaborate? Drop us a message.</p>
+    <a href="mailto:thekidostudio@gmail.com" class="contact-email">thekidostudio@gmail.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy">© 2025 Kido Studio. <span data-en="All rights reserved." data-tr="Tüm hakları saklıdır.">All rights reserved.</span></div>
+  <div class="footer-links">
+    <a href="blackhole.html#privacy" data-en="Blackhole Privacy" data-tr="Blackhole Gizlilik">Blackhole Privacy</a>
+    <a href="hydronudge.html#privacy" data-en="Hydronudge Privacy" data-tr="Hydronudge Gizlilik">Hydronudge Privacy</a>
+    <a href="#contact" data-en="Support" data-tr="Destek">Support</a>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/kido.js"></script>
+</body>
+</html>
+

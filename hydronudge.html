@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydronudge — Kido Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css">
+<link rel="stylesheet" href="css/hydronudge.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo"><span class="logo-dot"></span>Kido Studio</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="index.html#apps" data-en="Apps" data-tr="Uygulamalar">Apps</a></li>
+      <li><a href="index.html#about" data-en="About" data-tr="Hakkında">About</a></li>
+      <li><a href="index.html#contact" data-en="Contact" data-tr="İletişim">Contact</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button type="button" class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button type="button" class="lang-btn" data-lang="tr" onclick="setLang('tr')">TR</button>
+    </div>
+    <div class="theme-toggle">
+      <button type="button" class="theme-btn active" data-theme="dark" aria-label="Dark theme" onclick="setTheme('dark')">🌙</button>
+      <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme" onclick="setTheme('light')">☀️</button>
+    </div>
+  </div>
+</nav>
+
+<div class="app-hero">
+  <a href="index.html" class="back-link">← <span data-en="All Apps" data-tr="Tüm Uygulamalar">All Apps</span></a>
+  <div class="app-hero-icon">💧</div>
+  <div class="app-badges">
+    <span class="badge badge-soon" data-en="Coming Soon" data-tr="Yakında">Coming Soon</span>
+    <span class="badge badge-platform">iOS & Android</span>
+    <span class="badge badge-platform" data-en="Health & Fitness" data-tr="Sağlık & Fitness">Health & Fitness</span>
+  </div>
+  <h1 class="app-hero-name">Hydronudge</h1>
+  <p class="app-hero-tagline" data-en="Your intelligent hydration companion. AI-powered coaching that adapts to your lifestyle, live widgets for instant tracking, and social challenges that make drinking water a daily habit." data-tr="Akıllı hidrasyon asistanın. Yaşam tarzına uyum sağlayan yapay zeka koçluğu, anlık takip için canlı widget'lar ve su içmeyi günlük alışkanlığa dönüştüren sosyal yarışmalar.">Your intelligent hydration companion. AI-powered coaching that adapts to your lifestyle, live widgets for instant tracking, and social challenges that make drinking water a daily habit.</p>
+
+  <div class="notify-section">
+    <p class="notify-label" data-en="Get notified when we launch:" data-tr="Yayına girdiğimizde haberdar ol:">Get notified when we launch:</p>
+    <div class="notify-box">
+      <input type="email" id="notifyEmail" placeholder="your@email.com" data-placeholder-en="your@email.com" data-placeholder-tr="eposta@adresin.com">
+      <button type="button" class="notify-btn" onclick="handleNotify()" data-en="Notify Me" data-tr="Haber Ver">Notify Me</button>
+    </div>
+    <p id="notifyMessage" class="notify-message" role="status" aria-live="polite"></p>
+  </div>
+
+  <div class="store-coming">
+    <a href="#" class="store-coming-btn" data-store-app="hydronudge" data-store-platform="ios"><i class="si si-apple"></i><span data-en="Coming to App Store" data-tr="App Store'a Geliyor">Coming to App Store</span></a>
+    <a href="#" class="store-coming-btn" data-store-app="hydronudge" data-store-platform="android"><i class="si si-googleplay"></i><span data-en="Coming to Google Play" data-tr="Google Play'e Geliyor">Coming to Google Play</span></a>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="divider"></div>
+
+  <div class="section-title" data-en="Features" data-tr="Özellikler">Features</div>
+  <div class="features-grid">
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-title" data-en="AI Coaching" data-tr="Yapay Zeka Koçluğu">AI Coaching</div>
+      <div class="feature-desc" data-en="Learns your daily routine, sleep schedule, and habits. Delivers personalized hydration goals that actually fit your life." data-tr="Günlük rutininizi, uyku programınızı ve alışkanlıklarınızı öğrenir. Hayatınıza gerçekten uyan kişiselleştirilmiş hidrasyon hedefleri sunar.">Learns your daily routine, sleep schedule, and habits. Delivers personalized hydration goals that actually fit your life.</div>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">📱</div>
+      <div class="feature-title" data-en="Live Widgets" data-tr="Canlı Widget'lar">Live Widgets</div>
+      <div class="feature-desc" data-en="Track your progress directly from the home screen. No need to open the app — your hydration status is always visible." data-tr="İlerlemenizi doğrudan ana ekrandan takip edin. Uygulamayı açmanıza gerek yok — hidrasyon durumunuz her zaman görünürde.">Track your progress directly from the home screen. No need to open the app — your hydration status is always visible.</div>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🔔</div>
+      <div class="feature-title" data-en="Smart Reminders" data-tr="Akıllı Hatırlatmalar">Smart Reminders</div>
+      <div class="feature-desc" data-en="Notifications that respect your sleep and focus time. Reminders arrive when you actually need them." data-tr="Uyku ve odak zamanınıza saygı duyan bildirimler. Hatırlatmalar gerçekten ihtiyaç duyduğunuzda gelir.">Notifications that respect your sleep and focus time. Reminders arrive when you actually need them.</div>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🏆</div>
+      <div class="feature-title" data-en="Social Challenges" data-tr="Sosyal Yarışmalar">Social Challenges</div>
+      <div class="feature-desc" data-en="Challenge friends, join leaderboards, and stay accountable together. Hydration is better as a team sport." data-tr="Arkadaşlarınıza meydan okuyun, liderlik tablolarına katılın ve birlikte hesap verebilir olun.">Challenge friends, join leaderboards, and stay accountable together. Hydration is better as a team sport.</div>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title" data-en="Progress Insights" data-tr="İlerleme Analizi">Progress Insights</div>
+      <div class="feature-desc" data-en="Weekly and monthly reports showing your hydration trends, streaks, and achievements over time." data-tr="Hidrasyon trendlerinizi, serilerinizi ve zaman içindeki başarılarınızı gösteren haftalık ve aylık raporlar.">Weekly and monthly reports showing your hydration trends, streaks, and achievements over time.</div>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🌙</div>
+      <div class="feature-title" data-en="Offline First" data-tr="Çevrimdışı Öncelik">Offline First</div>
+      <div class="feature-desc" data-en="Works fully without internet. Your data syncs automatically when you reconnect." data-tr="İnternet olmadan tam olarak çalışır. Verileriniz yeniden bağlandığınızda otomatik senkronize olur.">Works fully without internet. Your data syncs automatically when you reconnect.</div>
+    </div>
+  </div>
+
+  <div id="privacy" class="section-title" data-en="Privacy Policy" data-tr="Gizlilik Politikası">Privacy Policy</div>
+  <div class="privacy-box">
+    <p class="privacy-date" data-en="Last updated: January 2025" data-tr="Son güncelleme: Ocak 2025">Last updated: January 2025</p>
+
+    <h3 data-en="Overview" data-tr="Genel Bakış">Overview</h3>
+    <p data-en="Kido Studio operates Hydronudge. This Privacy Policy explains how we handle your information when you use our application." data-tr="Kido Studio, Hydronudge uygulamasını işletmektedir. Bu Gizlilik Politikası, uygulamamızı kullandığınızda bilgilerinizi nasıl ele aldığımızı açıklamaktadır.">Kido Studio operates Hydronudge. This Privacy Policy explains how we handle your information when you use our application.</p>
+
+    <h3 data-en="Information We Collect" data-tr="Topladığımız Bilgiler">Information We Collect</h3>
+    <p data-en="To provide hydration tracking and coaching features, we may collect the following:" data-tr="Hidrasyon takibi ve koçluk özelliklerini sunmak için aşağıdakileri toplayabiliriz:">To provide hydration tracking and coaching features, we may collect the following:</p>
+    <ul>
+      <li data-en="Account information (email address) if you choose to create an account" data-tr="Hesap oluşturmayı seçerseniz hesap bilgileri (e-posta adresi)">Account information (email address) if you choose to create an account</li>
+      <li data-en="Hydration logs you manually enter (amounts and timestamps)" data-tr="Manuel olarak girdiğiniz hidrasyon kayıtları (miktarlar ve zaman damgaları)">Hydration logs you manually enter (amounts and timestamps)</li>
+      <li data-en="App preferences and notification settings" data-tr="Uygulama tercihleri ve bildirim ayarları">App preferences and notification settings</li>
+      <li data-en="Anonymous analytics to improve app performance" data-tr="Uygulama performansını iyileştirmek için anonim analitik">Anonymous analytics to improve app performance</li>
+    </ul>
+
+    <h3 data-en="How We Use Your Information" data-tr="Bilgilerinizi Nasıl Kullanıyoruz">How We Use Your Information</h3>
+    <ul>
+      <li data-en="To provide AI-powered hydration coaching personalized to your routine" data-tr="Rutininize kişiselleştirilmiş yapay zeka destekli hidrasyon koçluğu sunmak için">To provide AI-powered hydration coaching personalized to your routine</li>
+      <li data-en="To sync your data across devices (if account is created)" data-tr="Verilerinizi cihazlar arasında senkronize etmek için (hesap oluşturulmuşsa)">To sync your data across devices (if account is created)</li>
+      <li data-en="To send smart reminders and notifications" data-tr="Akıllı hatırlatmalar ve bildirimler göndermek için">To send smart reminders and notifications</li>
+      <li data-en="To enable social features like leaderboards and friend challenges" data-tr="Liderlik tabloları ve arkadaş yarışmaları gibi sosyal özellikleri etkinleştirmek için">To enable social features like leaderboards and friend challenges</li>
+    </ul>
+
+    <h3 data-en="Data We Do NOT Collect" data-tr="Toplamadığımız Veriler">Data We Do NOT Collect</h3>
+    <ul>
+      <li data-en="Health or medical records beyond what you manually log" data-tr="Manuel olarak kaydettiğinizin ötesinde sağlık veya tıbbi kayıtlar">Health or medical records beyond what you manually log</li>
+      <li data-en="Location data" data-tr="Konum verisi">Location data</li>
+      <li data-en="Contacts or device access" data-tr="Kişiler veya cihaz erişimi">Contacts or device access</li>
+      <li data-en="Payment information (processed by App Store or Google Play)" data-tr="Ödeme bilgileri (App Store veya Google Play tarafından işlenir)">Payment information (processed by App Store or Google Play)</li>
+    </ul>
+
+    <h3 data-en="Data Storage and Security" data-tr="Veri Depolama ve Güvenlik">Data Storage and Security</h3>
+    <p data-en="Your data is stored securely using industry-standard encryption via Firebase (Google), which complies with GDPR and other privacy regulations. You can delete your account and all associated data at any time from within the app." data-tr="Verileriniz, GDPR ve diğer gizlilik düzenlemelerine uyan Firebase (Google) aracılığıyla endüstri standardı şifreleme kullanılarak güvenli şekilde saklanır. Hesabınızı ve tüm verilerinizi istediğiniz zaman uygulama içinden silebilirsiniz.">Your data is stored securely using industry-standard encryption via Firebase (Google), which complies with GDPR and other privacy regulations. You can delete your account and all associated data at any time from within the app.</p>
+
+    <h3 data-en="Children's Privacy" data-tr="Çocukların Gizliliği">Children's Privacy</h3>
+    <p data-en="Hydronudge is not directed to children under 13. We do not knowingly collect personal information from children under 13." data-tr="Hydronudge, 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamayız.">Hydronudge is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h3 data-en="Changes to This Policy" data-tr="Bu Politikadaki Değişiklikler">Changes to This Policy</h3>
+    <p data-en="We may update this Privacy Policy from time to time. Changes will be reflected by updating the date at the top of this page." data-tr="Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfanın üstündeki tarihi güncelleyerek yansıtılacaktır.">We may update this Privacy Policy from time to time. Changes will be reflected by updating the date at the top of this page.</p>
+
+    <h3 data-en="Contact" data-tr="İletişim">Contact</h3>
+    <p data-en="Questions about this Privacy Policy?" data-tr="Bu Gizlilik Politikası hakkında sorularınız mı var?">Questions about this Privacy Policy?</p>
+    <p><a href="mailto:thekidostudio@gmail.com">thekidostudio@gmail.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-copy">© 2025 Kido Studio</div>
+  <div class="footer-links">
+    <a href="index.html" data-en="All Apps" data-tr="Tüm Uygulamalar">All Apps</a>
+    <a href="#privacy" data-en="Privacy Policy" data-tr="Gizlilik Politikası">Privacy Policy</a>
+    <a href="mailto:thekidostudio@gmail.com" data-en="Support" data-tr="Destek">Support</a>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/kido.js"></script>
+</body>
+</html>
+
